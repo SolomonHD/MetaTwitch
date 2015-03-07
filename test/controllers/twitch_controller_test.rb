@@ -6,4 +6,9 @@ class TwitchControllerTest < ActionController::TestCase
     assert_response :success
   end
 
+  test "test show" do
+    get :show
+    assert_response :success
+  end
+
 end
