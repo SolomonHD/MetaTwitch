@@ -1,0 +1,48 @@
+// Place all the styles related to the twitch controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.channel {
+  float:right;
+  width:90%;
+  padding: 30px 0;
+}
+
+.total {
+  font-size:1.3rem;
+  font-weight:600;
+  width:95%;
+  float:right;
+  padding: 50px 0;
+}
+
+h1 {
+  font-weight:600;
+  width:95%;
+  float:right;
+  padding: 50px 0;
+}
+
+p {
+  font-size:1.3rem;
+  font-weight:600;
+  width:95%;
+  float:right;
+  padding: 10px 0;
+}
+
+.ign {
+  float:right;
+  width:90%;
+  padding: 30px 0;
+}
+
+.thumb {
+  float: right;
+  width:88%;
+  padding:15px;
+}
+
+.channel-details {
+  display:inline-block;
+}

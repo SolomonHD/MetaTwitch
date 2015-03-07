@@ -1,0 +1,25 @@
+<% if @ign_response.blank? %>
+No IGN Results!
+<%  else  %>
+<div class="thumb">
+  <% if @ign_response[0].has_key?("thumb") %>
+  <%= image_tag @ign_response[0]["thumb"] %>
+  <% else %>
+  No Image!
+  <% end %>
+</div>
+<div class="ign">
+  <% if @ign_response[0]["score"] == 0 %>
+  Game was not reviewed.
+  <% else  %>
+  Score on Ign:<%= @ign_response[0]["score"] %><br>
+  <% end %>
+  Game description: <%= @ign_response[0]["short_description"] %>
+</div>
+<% end %>
+<div class="total">
+  Total Channels:<%= @response["_total"] %><br>
+</div>
+<% @response["channels"].each do |i| %>
+<%= render "channel", :i => i %>
+<% end %>
