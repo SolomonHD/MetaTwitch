@@ -12,5 +12,5 @@ class TwitchController < ApplicationController
     :headers => {
       "X-Mashape-Key" => "8jxjMfitOnmshjPtuOrBNALxx19mp1RoJOojsnkNMwm5lykf2f"
       })
-    end
+  end
 end
