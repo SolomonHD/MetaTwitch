@@ -7,7 +7,7 @@ class TwitchControllerTest < ActionController::TestCase
   end
 
   test "test show" do
-    get :show
+    get :show, id:@response
     assert_response :success
   end
 
