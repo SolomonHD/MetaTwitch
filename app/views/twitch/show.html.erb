@@ -12,8 +12,13 @@ No IGN Results!
   <% if @ign_response[0]["score"] == 0 %>
   Game was not reviewed.
   <% else  %>
-  Score on Ign:<%= @ign_response[0]["score"] %><br>
+  <div class="ign-score">
+    Score on Ign:
+  </div>
   <% end %>
+  <div class="ign-score-response">
+    <%= @ign_response[0]["score"] %><br>
+  </div>
   Game description: <%= @ign_response[0]["short_description"] %>
 </div>
 <% end %>
